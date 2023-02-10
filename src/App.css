@@ -12,7 +12,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.banner{
+  background-image: url(https://i.ibb.co/QF28gCH/Frame-40.png);
+  height: 400px;
+ }
+ .brdr{
+  border-right: 1px solid gray;
+ }
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
