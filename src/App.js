@@ -5,6 +5,7 @@ import Login from './Pages/Login/Login';
 import Header from './Shared/Header/Header';
 import Signup from './Pages/Login/Signup';
 import RecoverPass from './Pages/Login/RecoverPass';
+import UserList from './Pages/UserList/UserList';
 
 function App() {
   const router = createBrowserRouter([
@@ -30,6 +31,12 @@ function App() {
     path:"signup",
     element:(
       <Signup></Signup>
+    )
+  },
+  {
+    path:"userlist",
+    element:(
+      <UserList></UserList>
     )
   }
 ])

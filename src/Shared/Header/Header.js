@@ -1,8 +1,7 @@
 import React from 'react';
-import { CiSearch } from 'react-icons/ci';
-import {FiShoppingCart , FiSearch} from 'react-icons/fi';
-import { AiOutlineSearch, AiOutlineUser } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { AiOutlineUser } from 'react-icons/ai';
+import { FiSearch, FiShoppingCart } from 'react-icons/fi';
+
 
 
 const Header = () => {
@@ -13,16 +12,16 @@ const Header = () => {
                     <div>
                         <ul className='flex pl-[91px] hidden lg:flex'>
                             <li>
-                                <a href="/" class="block mr-3 py-2 pl-3 pr-4 text-[14px] uppercase text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   " aria-current="page">Home</a>
+                                <a href="/" className="block mr-3 py-2 pl-3 pr-4 text-[14px] uppercase text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   " aria-current="page">Home</a>
                             </li>
                             <li>
-                                <a href="/login" class="block mx-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">shop</a>
+                                <a href="/login" className="block mx-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">shop</a>
                             </li>
                             <li>
-                                <a href="#" class="block mx-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">about us</a>
+                                <a href="#" className="block mx-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">about us</a>
                             </li>
                             <li>
-                                <a href="#" class="block ml-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">contact us</a>
+                                <a href="#" className="block ml-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">contact us</a>
                             </li>
                         </ul>
                     </div>
@@ -31,7 +30,7 @@ const Header = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>HOME</a></li>
+                            <li><a href='/'>HOME</a></li>
                             <li><a>SHOP</a></li>
                             <li><a>ABOUT US</a></li>
                             <li><a>CONTACT US</a></li>
@@ -39,7 +38,8 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="navbar-center">
-                    <a className="btn btn-ghost normal-case text-xl">Genesys</a>
+                
+                    <a className="btn btn-ghost normal-case text-xl"><img className='w-[50px]' src="https://i.ibb.co/zbHv8t4/images-removebg-preview-3.png" alt="" /> <span className='text-sm'>Genesys</span> </a>
                 </div>
                 <div className="navbar-end  lg:pr-24">
                    
