@@ -2,20 +2,21 @@ import React from 'react';
 import { CiSearch } from 'react-icons/ci';
 import {FiShoppingCart , FiSearch} from 'react-icons/fi';
 import { AiOutlineSearch, AiOutlineUser } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar ">
                 <div className="navbar-start">
                     <div>
                         <ul className='flex pl-[91px] hidden lg:flex'>
                             <li>
-                                <a href="#" class="block mr-3 py-2 pl-3 pr-4 text-[14px] uppercase text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   " aria-current="page">Home</a>
+                                <a href="/" class="block mr-3 py-2 pl-3 pr-4 text-[14px] uppercase text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   " aria-current="page">Home</a>
                             </li>
                             <li>
-                                <a href="#" class="block mx-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">shop</a>
+                                <a href="/login" class="block mx-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">shop</a>
                             </li>
                             <li>
                                 <a href="#" class="block mx-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">about us</a>
@@ -45,8 +46,9 @@ const Header = () => {
                     <button className="">
                        <FiSearch className='text-xl'></FiSearch>
                     </button>
-                    <button className="mx-3">
-                    <AiOutlineUser className='text-xl'></AiOutlineUser>
+                    <button  className="mx-3">
+                    <a href='/login'><AiOutlineUser className='text-xl'>  </AiOutlineUser></a>
+                    
                     </button>
                     <button className="">
                        <FiShoppingCart className='text-xl'></FiShoppingCart>
