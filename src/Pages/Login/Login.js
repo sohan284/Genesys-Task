@@ -37,8 +37,7 @@ const Login = () => {
 
     return (
         <div className='App  bg-white pt-24'>
-            <button onClick={()=> signInWithGoogle()}>SIGN IN GOOGLE</button>
-            <form onSubmit={()=>signInWithEmailAndPassword(email,password)} className='pb-[144px] w-[50%] mx-auto'>
+           <form onSubmit={()=>signInWithEmailAndPassword(email,password)} className='pb-[144px] w-[50%] mx-auto'>
                 <h1 className='text-2xl mb-12'>LOGIN</h1>
                 <div className="mb-6">
                     <input
