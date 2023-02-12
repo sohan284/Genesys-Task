@@ -19,22 +19,6 @@ const Login = () => {
       ] = useSignInWithEmailAndPassword(auth);
 
 
-    const handleLogin = (event) => {
-        event.preventDefault();
-        const email = event.target.email.value;
-        const password = event.target.password.value;
-        signInWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                const user = result.user;
-                console.log(user);
-            })
-            .catch()
-        setEmail('');
-        setPassword('');
-    }
-
-
-
     return (
         <div className='App  bg-white pt-24'>
            <form onSubmit={()=>signInWithEmailAndPassword(email,password)} className='pb-[144px] w-[50%] mx-auto'>
