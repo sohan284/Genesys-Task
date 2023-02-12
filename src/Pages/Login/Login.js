@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-// import { useSignInWithEmailAndPassword, useSignInWithGoogle, useAuthState } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle, useAuthState } from 'react-firebase-hooks/auth';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../../Shared/Footer/Footer';
@@ -12,13 +12,19 @@ const Login = () => {
     const navigate = useNavigate()
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [signInWithGoogle] = useSignInWithGoogle(auth);
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useSignInWithEmailAndPassword(auth);
 
 
     const handleLogin = (event) => {
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
-        console.log(email, password)
         signInWithEmailAndPassword(auth, email, password)
             .then(result => {
                 const user = result.user;
@@ -33,7 +39,8 @@ const Login = () => {
 
     return (
         <div className='App  bg-white pt-24'>
-            <form onSubmit={handleLogin} className='pb-[144px] w-[50%] mx-auto'>
+            <button onClick={()=> signInWithGoogle()}>SIGN IN GOOGLE</button>
+            <form onSubmit={()=>signInWithEmailAndPassword(email,password)} className='pb-[144px] w-[50%] mx-auto'>
                 <h1 className='text-2xl mb-12'>LOGIN</h1>
                 <div className="mb-6">
                     <input

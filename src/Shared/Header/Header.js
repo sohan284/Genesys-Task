@@ -18,10 +18,10 @@ const Header = () => {
                                 <a href="/login" className="block mx-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">shop</a>
                             </li>
                             <li>
-                                <a href="#" className="block mx-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">about us</a>
+                                <a href="/signup" className="block mx-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">about us</a>
                             </li>
                             <li>
-                                <a href="#" className="block ml-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">contact us</a>
+                                <a href="/userlist" className="block ml-3 text-[14px] uppercase py-2 pl-3 pr-4 text-[rgba(45, 41, 41, 1)] text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0   ">contact us</a>
                             </li>
                         </ul>
                     </div>
