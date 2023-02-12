@@ -10,7 +10,7 @@ const UserList = () => {
     const [users, setUsers] = useState();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/user`)
+        fetch(`https://genesys-task.onrender.com/user`)
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [])
@@ -23,7 +23,7 @@ const UserList = () => {
 
     console.log(data)
     const email = user?.email;
-    fetch(`http://localhost:5000/user/${email}`, {
+    fetch(`https://genesys-task.onrender.com/user/${email}`, {
         method: 'PUT',
         headers: {
             'content-type': "application/json"
