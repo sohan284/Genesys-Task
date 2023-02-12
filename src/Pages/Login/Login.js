@@ -2,14 +2,12 @@
 import { useState } from 'react';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle, useAuthState } from 'react-firebase-hooks/auth';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { useNavigate } from 'react-router-dom';
 import Footer from '../../Shared/Footer/Footer';
 import auth from './../../firebase.init';
 
 
 
 const Login = () => {
-    const navigate = useNavigate()
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [signInWithGoogle] = useSignInWithGoogle(auth);

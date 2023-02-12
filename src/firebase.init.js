@@ -6,12 +6,12 @@ import { getAuth } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDs697iqWp1Ks7juhkCSF53us7uzN7D9Lc",
-  authDomain: "genesys-task-9.firebaseapp.com",
-  projectId: "genesys-task-9",
-  storageBucket: "genesys-task-9.appspot.com",
-  messagingSenderId: "936508044993",
-  appId: "1:936508044993:web:fda2b47389ded7aa688640"
+  apiKey: "AIzaSyBXsGay9t20qbAsI1acUz7adBHdHaOaSqc",
+  authDomain: "genesys-67705.firebaseapp.com",
+  projectId: "genesys-67705",
+  storageBucket: "genesys-67705.appspot.com",
+  messagingSenderId: "493779256705",
+  appId: "1:493779256705:web:bcaa280c45e8ce34179480"
 };
 
 // Initialize Firebase
